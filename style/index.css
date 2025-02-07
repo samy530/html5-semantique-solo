@@ -1,0 +1,137 @@
+body{
+      background: linear-gradient(160deg, #2989d8, #018b18);
+              background-size: 400%;
+              animation: transition 15s infinite;
+    }
+    @keyframes transition{
+      0%{
+          background-position: 0% 0%;
+      }
+      25%{
+          background-position: 50% 50%;
+      }
+      50%{
+          background-position: 100% 100%;
+      }
+      75%{
+          background-position: 50% 50%;
+      }
+      100%{
+          background-position: 0% 0%;
+      }
+  }
+
+.accueil-introduction {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    align-items: flex-start;
+  }
+  
+.accueil-introduction h1{
+    margin-bottom: 15px;;
+    margin-left: 70px;
+    font-family: 'Anton', sans-serif;
+  }
+  h1:hover{
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,0 0 15px #0073e6,
+    0 0 20px #0073e6, 0 0 25px #0073e6,
+    0 0 30px #0073e6;
+  }
+  
+  .accueil-introduction p {
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding-left: 15px;
+    width: 900px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .bd{
+    border: 1px solid rgb(22, 243, 2);
+    border-radius: 30px;
+  }
+  
+  img.alignright{
+    float:right;
+    width: 250px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-right: 70px;
+    margin-top: 150px;
+}
+  .cta {
+    display: inline-block;
+    background: linear-gradient(#8e86b5, #acaeed);
+    color: white;
+    border-radius: 70px;
+    padding: 10px 30px;
+    margin-left: 350px;
+    margin-bottom: 30px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .cta:hover {
+    background: linear-gradient(#696484, #8788ba);
+    text-decoration: none;
+  }
+.para p{
+  margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding-left: 15px;
+    width: 1300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.para{
+  border: 1px solid rgb(22, 243, 2);
+  border-radius: 30px;
+}
+.cta1{
+  display: inline-block;
+    background: linear-gradient(#8e86b5, #acaeed);
+    color: white;
+    border-radius: 70px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    margin-left: 600px;
+}
+.cta1:hover{
+  background: linear-gradient(#696484, #8788ba);
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  /* Vos règles CSS pour les écrans de moins de 768px ici */
+  .accueil-introduction h1{
+    margin-bottom: 15px;
+    margin-right: 5px;
+  }
+  .accueil-introduction p {
+    width: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .bd{
+    width: 320px;
+  }
+  .para{
+    width: 320px;
+  }
+  .para p{
+      width: 300px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .cta {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  .cta1{
+      margin-left: 30px;
+  }
+  img.alignright{
+    display: none;
+}
+}

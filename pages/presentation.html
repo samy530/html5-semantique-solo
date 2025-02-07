@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/presentation.css">
+    <title>Presentation</title>
+    <link rel="icon" href="../images/iconehtml.png" type="image/png">
+</head>
+<body>
+<!--menu de navigation principale-->
+   <header>
+    <nav>
+        <div class="header">
+           
+            <ul >
+              <li ><a href="../index.html">HOME</a></li>
+              <li ><a href="../pages/presentation.html">PRESENTATION</a></li>
+              <li ><a href="../pages/aide.html">CONTACT</a></li>
+            </ul>
+        </div>
+   </nav>  
+</header>
+<main>
+     <h1>LES BALISES SEMANTIQUES</h1>
+       <br>
+       <aside class="bordure">    
+        <ul>
+            <li ><a href="#balisesemantique">Définition</a></li>
+            <li ><a href="#gen">Généralité</a></li>
+            <li ><a href="#video">Vidéo</a></li>
+         <li ><a href="#header">header</a></li>
+          <li ><a href="#nav">nav</a></li>
+          <li><a href="#main">main</a></li>
+          <li><a href="#article">article</a></li>
+          <li><a href="#section">section</a></li>
+          <li><a href="#aside">aside</a></li>
+          <li><a href="#footer">footer</a></li>
+        </ul>
+    </aside>
+    
+        <div class="ban">
+            <img  class="alignright"src="../images/image1.png" alt="Mon image">
+         <h2 id="balisesemantique"><u>Qu’est-ce qu’une balise sémantique ?</u></h2>
+         <p class="alignleft">Une balise sémantique est une étiquette ou une marque de code qui est utilisée pour décrire le contenu d'une page web de manière structurelle et sémantique.<br>
+         Elle permet aux moteurs de recherche et aux navigateurs de comprendre et d'interpréter le contenu de la page, ce qui facilite la navigation pour les utilisateurs et améliore le référencement  de la page.
+          Les balises sémantiques incluent des éléments HTML tels que <br> < header >,< nav >,< section>,< article >,< aside >,<br>< main > et < footer >, qui indiquent la structure de la page et le rôle de chaque élément , sans oublier que ces balises sont fermantes comme suit:< /header>,< /nav>,<br>< /section>,< /article>,< /aside>,< /main>,< /footer>.<br>Elles permettent également aux développeurs web de créer des pages plus accessibles et plus conviviales pour les utilisateurs, notamment les personnes atteintes d'un handicap visuel ou moteur.</p>
+          <h2 id="gen"><u>Généralité:</u></h2>
+          <table>
+            <thead>
+                <tr>
+                    <th>Balise</th>
+                    <th>Définition</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>header</td>
+                    <td>utilisé pour représenter l'en-tête d'une page ou d'une section</td>
+                </tr>
+                <tr>
+                    <td>nav</td>
+                    <td>utilisé pour représenter la barre de navigation principale d'une page</td>
+                </tr>
+                <tr>
+                    <td>main</td>
+                    <td>utilisé pour représenter le contenu principal d'une page</td>
+                </tr>
+                <tr>
+                    <td>section</td>
+                    <td>utilisé pour représenter une section indépendante d'une page, telle qu'un chapitre, une partie ou un groupe de contenu connexe</td>
+                </tr>
+                <tr>
+                    <td>article</td>
+                    <td> utilisé pour représenter un contenu indépendant et autonome, comme un article de blog ou une nouvelle</td>
+                </tr>
+                <tr>
+                    <td>aside</td>
+                    <td>utilisé pour représenter un contenu qui est lié au contenu principal, mais qui n'est pas essentiel pour la compréhension du contenu principal</td>
+                </tr>
+                <tr>
+                    <td>footer</td>
+                    <td> utilisé pour représenter le pied de page d'une page ou d'une section</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="video"><u>Vidéo présentation:</u></h2>
+        <video src="../videos/balisessemantiques.mp4" controls poster="../images/miniaturevideo.jpg"></video>
+
+          <h2 id="header"><u>1/La balise < Header >:</u></h2>
+         <p class="para">La balise < header > en html est utilisée pour représenter l'en-tête d'une page web ou d'une section de contenu.<br> Elle est généralement placée en haut de la page et contient des éléments tels que le titre de la page, le logo du site, le menu de navigation, etc...</p>
+         
+         <h2 id="nav"><u>2/La balise < nav > :</u></h2>
+         <p class="para">Dans la balise < header > vu précédemment, nous pouvons ajouter une zone servant à délimiter la navigation principale du site web. Cette zone peut être définie à l’aide de la balise sémantique< nav >.<br>Il faut tout de même savoir que la balise < nav > n’est pas forcément placée dans le header d’un site, on peut la retrouver n’importe où et à plusieurs endroits de la page comme par exemple dans le footer ou dans une barre latérale de contenu (sidebar).</p>
+         
+         <h2 id="main"><u>3/La balise < main > :</u></h2>
+         <p class="para">La balise < main > en html est utilisée pour encapsuler le contenu principal d'une page web. Elle est généralement utilisée pour contenir le contenu principal d'une page, tel que le texte principal, les images, les graphiques, les vidéos, etc. Elle est souvent utilisée en conjonction avec d'autres balises sémantiques telles que < header >, < footer>,< nav >, etc...<br>L'utilisation de la balise < main >aide les moteurs de recherche à comprendre la structure de la page et à déterminer quel est le contenu principal. Elle peut également être utile pour les technologies d'assistance telles que les lecteurs d'écran, qui peuvent utiliser les informations de la balise pour fournir une meilleure expérience utilisateur aux personnes ayant une déficience visuelle.</p>
+         
+         <h2 id="article"><u>4/La balise < article > :</u></h2>
+          <p class="para">Cette balise va permettre de signaler aux robots d’indexation quels éléments sont en lien avec le sujet de la page. Vous pouvez glisser dans la balise < article >, le titre, les informations sur l’auteur ou la date de publication, la catégorie, le corps de l’article, et les articles annexes d’une même thématique. La bonne tenue de la balise article va également dépendre de l’objectif de votre site web. Cette balise a d’autant plus d’importance sur un site e-commerce, un site d’actualité ou un blog.</p>
+         
+          <h2 id="section"><u>5/La balise < section > :</u></h2>
+         <p class="para">La balise < section >  en HTML est utilisée pour représenter une section d'une page web. Elle permet de diviser une page en sections logiques et indépendantes, ce qui facilite la compréhension du contenu pour les utilisateurs et les moteurs de recherche.</p>
+         
+         <h2 id="aside"><u>6/La balise < aside > :</u></h2>
+         <p class="para">La balise < aside > est souvent utilisée pour délimiter des sidebars (les barres latérales de contenu annexes que l'on retrouve souvent sur des blogs) et représenter un contenu connexe ou complémentaire au contenu principal d'une page. Elle peut être utilisée pour ajouter des informations supplémentaires, des anecdotes, des références ou des publicités qui ne sont pas directement liées au contenu principal, mais qui sont tout de même pertinentes pour les utilisateurs.</p>
+         
+         <h2 id="footer"><u>7/La balise < footer > :</u></h2>
+         <p class="para">La septième et dernière balise sémantique de structure de page est < footer >,elle est utilisée pour définir le pied de page d'une page web ou d'une section de page. Cette balise est généralement utilisée pour inclure des informations telles que les droits d'auteur, les informations de contact, les liens vers des pages associées ou toute autre information de fin de page pertinente.</p>
+        </div>
+    </main>
+        <!--pied de la page-->
+        <footer>
+              <div class="footerbottom">
+                <p>Copyright &copy;2023; Designed by <span class="designer">Samy</span></p>
+              </div>
+          </footer>
+</body>
+</html>

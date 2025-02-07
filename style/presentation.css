@@ -1,0 +1,146 @@
+body{
+    background-image: url(../images/background.jpg);
+}
+h1{
+    color: rgb(112, 250, 0);
+    text-align: center;
+    border: 1px solid;
+    font-size: 25px;
+    width: 400px;
+   margin: auto;
+   margin-top: 50px;
+}
+.para{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: aqua;
+
+}
+.ban{
+    padding: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    width:1120px;
+    border-radius: 10px;
+}
+p.alignleft{
+    text-align:left;
+    color: rgb(245, 245, 245);
+    font-size: 30px;
+    padding-left: 15px;
+    width: 700px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img.alignright{
+    float:right;
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 30px;
+    margin-top: 200px;
+}
+ul {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   float: right;
+}
+ul li {
+    list-style:none;
+    margin-left:-22px
+}
+ ul li a{
+    font-size: 26px;
+    text-decoration: none;
+    color: #05f3df;
+    transition: 0.5s ease;
+}
+ ul:hover li a {
+    color: #fc008b;
+}
+
+ ul:hover li a:not(:hover){
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+table {
+    text-align: center;
+    width:800px;
+    border-collapse: collapse;
+    margin:auto;
+    background-color: #030303;
+  }
+  
+  td,
+  th {
+    padding: 20px;
+    border: 1px solid #a5b4fc;
+  }
+  
+  td {
+    padding: 20px;
+    color: #ffffff;
+  } th{
+    color: #05f3bf;
+  }
+.bordure{
+    
+    float: right;
+    border: 5px solid rgb(26, 196, 173);
+     border-radius: 30px;
+     position: fixed;
+     margin-left: 1165px;
+     margin-top: -20px;
+     background: #030303;
+}
+video{
+    margin-left: 100px;
+    width:900px;
+    border-radius: 50px;
+}
+@media screen and (max-width: 768px) {
+    /* Vos règles CSS pour les écrans de moins de 768px ici */
+    h1{
+        width: 300px;
+    }
+    .ban{
+        width:310px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    img.alignright{
+       display: none;
+    }
+    .para{
+        font-size: 30px;
+        width: 300px;
+    }
+    p.alignleft{
+        width: 300px;
+        text-align: left;
+    }
+    table{
+        width:300px
+    }
+    td,
+    th {
+      padding: 10px;
+      border: 1px solid #a5b4fc;
+    }
+    video{
+        margin-left: 0px;
+        width:300px;
+        border-radius: 50px;
+    }
+    .bordure{
+display: none;
+    }
+    ul{
+        display: none;
+    }
+}

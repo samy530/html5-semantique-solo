@@ -1,0 +1,88 @@
+/*Ce bloc de propriétés CSS s'applique aux éléments <ul> contenus dans l'élément avec la classe .header*/
+.header ul {
+font-family: 'chivo Mono',monospace;
+display: flex;/*permet de convertir l'élément <ul> en un conteneur flexible avec des éléments flexibles à l'intérieur.*/
+gap:72px;/*l'espace entre chaque élément <li> à l'intérieur de l'élément <ul>.*/
+justify-content: end;/*elle définit comment les éléments <li> doivent être alignés horizontalement à l'intérieur de l'élément <ul>.*/
+}
+/*Ce bloc de propriétés CSS s'applique aux éléments <li> contenus dans les éléments <ul> qui se trouvent à l'intérieur de l'élément avec la classe .header.*/
+.header ul li {
+    list-style: none;/* supprimer les puces de liste par défaut des éléments <li>.*/ 
+    padding-right: 30px;/*Cette propriété définit la marge intérieure droite pour chaque élément <li>.*/
+    padding-top: 10px;/*Cette propriété définit la marge intérieure supérieure pour chaque élément <li>.*/
+}
+/*Ce bloc de propriétés CSS s'applique aux éléments <a> contenus dans les éléments <li> qui se trouvent à l'intérieur de l'élément avec la classe .header. */
+.header ul li a{
+    font-size: 26px;/* Cette propriété définit la taille de la police pour le texte à l'intérieur de chaque élément <a>. */
+    font-weight: 700;/*Cette propriété définit l'épaisseur de la police pour le texte à l'intérieur de chaque élément <a>.*/ 
+    text-decoration: none;/*Cette propriété permet de supprimer le soulignement par défaut des liens hypertextes.*/
+    text-transform: uppercase;/* Cette propriété permet de convertir le texte à l'intérieur de chaque élément <a> en majuscules.*/
+    color: #48f305;
+
+    padding: 10px;/* Cette propriété définit la marge intérieure pour chaque élément <a>. */
+    transition: 0.5s ease;/* Cette propriété permet de créer une transition d'animation fluide lorsqu'un élément <a> est survolé par la souris.
+    Dans ce cas, la transition d'animation durera 0.5s et sera fluide (ease).*/
+}
+/*Ce bloc de propriétés CSS s'applique aux éléments <a> contenus dans les éléments <li> qui se trouvent à l'intérieur de l'élément avec la classe .header lorsqu'on survole l'élément <ul> avec la souris.*/
+.header ul:hover li a {
+    color: #30edf4;
+}
+/*Ce bloc de propriétés CSS s'applique aux éléments <a> contenus dans les éléments <li> qui se trouvent à l'intérieur de l'élément avec la classe .header lorsqu'on survole l'élément <ul> avec la souris,
+ mais uniquement aux éléments <a> qui ne sont pas eux-mêmes survolés par la souris.*/
+.header ul:hover li a:not(:hover){
+    color: white;
+    opacity: 0.3;/*Cette propriété définit l'opacité du texte */
+    filter: blur(1px);/*Cette propriété applique un flou de 1px au texte */
+}
+/*Ce bloc de propriétés CSS s'applique à l'élément qui a la classe .header */
+.header{
+    background-color: #362c36; /*la couleur de fond de l'élément.*/
+    height: 80px;/*la hauteur de l'élément*/
+    margin: 10px;/*la marge autour de l'élément.*/
+    border:1px solid rgb(6, 30, 245);/* la bordure de l'élément. */
+    border-radius: 13px;/*permet d'arrondir les coins de l'élément.*/
+}
+/*Ce bloc de propriétés CSS s'applique à l'élément footer.*/
+footer{
+    background-color: #111;/*la couleur de fond de l'élément*/
+border-radius: 15px;/*permet d'arrondir les coins de l'élément.*/
+}
+/*Ce bloc de propriétés CSS s'applique à l'élément qui a la classe .footerbottom.*/
+.footerbottom{
+    background-color: #000;/*la couleur de fond de l'élément*/
+    padding: 20px; /*la marge intérieure pour chaque élément*/
+    text-align: center;/*l'alignement horizontal du texte*/
+    color: white;/* Cette propriété définit la couleur du texte */
+    border-radius: 15px;/*permet d'arrondir les coins de l'élément.*/
+    margin-top: 30px;/*la marge supérieure de l'élément.*/
+}
+/*Ce bloc de propriétés CSS s'applique à tous les éléments de paragraphe (éléments <p>) qui se trouvent à l'intérieur de l'élément qui a la classe .footerbottom.*/
+.footerbottom p{
+    margin: auto;/*Cette propriété définit les marges autour de l'élément. */
+}
+/*Ce bloc de propriétés CSS s'applique à tous les éléments qui ont la classe .designer.*/
+.designer {
+    opacity: 0.7;/* Cette propriété définit l'opacité de l'élément*/
+    text-transform: uppercase;/* Cette propriété permet de transformer le texte en majuscules.*/
+    letter-spacing: 1px;/*Cette propriété définit l'espacement entre les caractères du texte de l'élément.*/
+    font-weight: 400;/*Cette propriété définit l'épaisseur de la police de caractères utilisée pour l'élément. */
+    margin: 0px 5px;/*: Cette propriété définit les marges autour de l'élément.*/
+}
+@media screen and (max-width: 768px) {
+    /* Vos règles CSS pour les écrans de moins de 768px ici */
+    .header ul {
+        font-family: 'chivo Mono',monospace;
+        display: flex;
+        gap:10px;
+        justify-content: end;
+        }
+        .header ul li a{
+            font-size: 11px;
+            font-weight: 700px; 
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #48f305;
+            padding: 10px;
+            transition: 0.5s ease;
+        }
+  }
